@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #083a4f;
+  --color-gold: #a58d66;
+  --color-aqua: #c0d5d6;
+  --color-teal: #4d7e8c;
+  --color-sand: #e5e1dd;
+  --color-white: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #4a5568;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy);
+}
