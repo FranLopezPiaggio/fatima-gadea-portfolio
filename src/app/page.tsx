@@ -8,16 +8,15 @@ import {
   CTA,
   Footer,
   FloatingWhatsApp,
+  HeroCurtain
 } from "@/components";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroCurtain />
       <About />
       <Services />
-      {/* <Experience /> */}
-      {/* <Certifications /> */}
       <Process />
       <CTA />
       <Footer />

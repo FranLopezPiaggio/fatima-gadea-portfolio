@@ -25,7 +25,7 @@ const certifications = [
 
 export function Certifications() {
   return (
-    <section className="py-20 px-4 bg-navy">
+    <section className="py-20 px-4 bg-green">
       <motion.div
         initial="hidden"
         whileInView="visible"

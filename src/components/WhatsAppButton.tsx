@@ -14,7 +14,7 @@ export function WhatsAppButton({ message }: { message?: string }) {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all duration-200 hover:-translate-y-1 cursor-pointer"
+      className="inline-flex items-center gap-2 bg-pink text-green px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all duration-200 hover:-translate-y-1 cursor-pointer"
       aria-label="Contactar por WhatsApp"
     >
       <Image

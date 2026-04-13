@@ -13,7 +13,7 @@ const experiences = [
   },
   {
     company: "E-commerce Local",
-    role: "Media Buyer",
+    role: "trafficker digital",
     period: "2020 - 2021",
     description: "Campañas de Meta Ads con ROAS promedio de 4x",
   },
@@ -39,7 +39,7 @@ export function Experience() {
           <span className="text-gold font-medium tracking-wider uppercase">
             Experiencia
           </span>
-          <h2 className="font-heading text-4xl md:text-5xl text-navy mt-4">
+          <h2 className="font-heading text-4xl md:text-5xl text-green mt-4">
             Trayectoria profesional
           </h2>
         </motion.div>
@@ -52,14 +52,14 @@ export function Experience() {
               className="flex flex-col md:flex-row gap-6 p-6 bg-sand rounded-xl hover:bg-aqua/30 transition-colors duration-300"
             >
               <div className="md:w-1/3">
-                <h3 className="font-heading text-xl text-navy">
+                <h3 className="font-heading text-xl text-green">
                   {exp.company}
                 </h3>
                 <p className="text-teal font-medium">{exp.role}</p>
-                <p className="text-navy/60 text-sm mt-2">{exp.period}</p>
+                <p className="text-green/60 text-sm mt-2">{exp.period}</p>
               </div>
               <div className="md:w-2/3">
-                <p className="text-navy/80">{exp.description}</p>
+                <p className="text-green/80">{exp.description}</p>
               </div>
             </motion.div>
           ))}

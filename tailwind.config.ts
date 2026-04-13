@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: "#083A4F",
-        gold: "#A58D66",
-        lightGold: "#f3d09aff",
-        aqua: "#c0d5d6",
+        gold: "#906c37ff",
+        beige: "#fbefbfff",
         teal: "#4d7e8c",
-        sand: "#e5e1dd",
+        green:"#1c3d1cff",
+        sand: "#f3f0edff",
+        pink: "#f5a7c1ff"
       },
       fontFamily: {
         heading: ["Playfair Display SC", "serif"],

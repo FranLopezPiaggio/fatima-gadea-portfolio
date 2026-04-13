@@ -1,7 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "./animation";
+import { useState, useEffect } from "react";
+import { fadeInUp } from "./animation";
+import { HorizontalScroll, StaticServicesGrid } from "./HorizontalScroll";
+import { ServiceCard, ServiceCardStatic } from "./ServiceCard";
 
 const services = [
   {
@@ -37,39 +40,71 @@ const services = [
 ];
 
 export function Services() {
+  const [shouldUseStatic, setShouldUseStatic] = useState(false);
+
+  useEffect(() => {
+    // Check for reduced motion preference or mobile
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+    
+    setShouldUseStatic(mediaQuery.matches || isMobile);
+
+    const handleChange = () => {
+      setShouldUseStatic(mediaQuery.matches || window.innerWidth < 768);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    window.addEventListener("resize", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+      window.removeEventListener("resize", handleChange);
+    };
+  }, []);
+
   return (
-    <section id="servicios" className="py-20 px-4 bg-aqua/20">
+    <section id="servicios" className="py-20 bg-aqua/20">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        variants={staggerContainer}
-        className="max-w-6xl mx-auto"
+        variants={fadeInUp}
+        className="mb-16 px-4"
       >
-        <motion.div variants={fadeInUp} className="text-center mb-16">
+        <div className="text-center">
           <span className="text-gold font-medium tracking-wider uppercase">
             Servicios
           </span>
-          <h2 className="font-heading text-4xl md:text-5xl text-navy mt-4">
+          <h2 className="font-heading text-4xl md:text-5xl text-green mt-4">
             Lo que hago por tu negocio
           </h2>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <h3 className="font-heading text-2xl text-navy mb-4">
-                {service.title}
-              </h3>
-              <p className="text-navy/70">{service.description}</p>
-            </motion.div>
-          ))}
         </div>
       </motion.div>
+
+      {shouldUseStatic ? (
+        // Static grid for mobile / reduced motion
+        <StaticServicesGrid>
+          {services.map((service, index) => (
+            <ServiceCardStatic
+              key={index}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </StaticServicesGrid>
+      ) : (
+        // Horizontal scroll for desktop with motion enabled
+        <HorizontalScroll>
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              index={index}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </HorizontalScroll>
+      )}
     </section>
   );
 }

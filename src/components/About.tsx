@@ -24,14 +24,14 @@ export function About() {
 
         <motion.h2
           variants={fadeInUp}
-          className="font-heading text-4xl md:text-5xl text-navy mt-4 mb-8"
+          className="font-heading text-4xl md:text-5xl text-green mt-4 mb-8"
         >
           Mi enfoque: resultados que se pueden medir
         </motion.h2>
 
         <motion.div
           variants={fadeInUp}
-          className="space-y-6 text-lg text-navy/80"
+          className="space-y-6 text-lg text-green/80"
         >
           <p>
             Todo empezó emprendiendo. Y fue en ese camino donde descubrí mi pasión por el marketing y por algo muy concreto: crear estrategias que funcionen y atraigan.
@@ -51,26 +51,26 @@ export function About() {
         >
           {/* <div className="p-6 bg-sand rounded-xl">
             <TrendingUp className="w-8 h-8 text-teal mb-4" />
-            <h3 className="font-heading text-xl text-navy mb-2">
+            <h3 className="font-heading text-xl text-green mb-2">
               Enfoque en ROI
             </h3>
-            <p className="text-navy/70">
+            <p className="text-green/70">
               Cada campaña optimizada para resultados medibles
             </p>
           </div>
           <div className="p-6 bg-sand rounded-xl">
             <BarChart3 className="w-8 h-8 text-teal mb-4" />
-            <h3 className="font-heading text-xl text-navy mb-2">Data-Driven</h3>
-            <p className="text-navy/70">
+            <h3 className="font-heading text-xl text-green mb-2">Data-Driven</h3>
+            <p className="text-green/70">
               Decisiones basadas en análisis de datos reales
             </p>
           </div>
           <div className="p-6 bg-sand rounded-xl">
             <Target className="w-8 h-8 text-teal mb-4" />
-            <h3 className="font-heading text-xl text-navy mb-2">
+            <h3 className="font-heading text-xl text-green mb-2">
               Estrategia Personalizada
             </h3>
-            <p className="text-navy/70">
+            <p className="text-green/70">
               Soluciones adaptadas a cada negocio y objetivo
             </p>
           </div> */}

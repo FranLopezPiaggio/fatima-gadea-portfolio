@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fatima Gadea | Social Media Manager & Media Buyer",
+  title: "Fatima Gadea | Social Media Manager & trafficker digital",
   description:
     "Social Media Manager specializing in Meta Ads strategy and execution. Turn your social media presence into measurable results.",
 };
@@ -26,7 +26,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body bg-sand text-navy antialiased">
+      <body className="font-body bg-sand text-green antialiased">
         {children}
       </body>
     </html>
