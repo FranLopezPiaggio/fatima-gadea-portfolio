@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, TrendingUp, BarChart3, FileText, Target } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/components/animation";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppButton } from "@/components/WhatsApp/WhatsAppButton";
 
 export function Hero() {
   return (

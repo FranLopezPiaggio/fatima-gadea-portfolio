@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "./animation";
+import { fadeInUp, staggerContainer } from "@/components/animation";
 import { TrendingUp, BarChart3, Target } from "lucide-react";
-import { WhatsAppButton } from "./WhatsAppButton";
+import { WhatsAppButton } from "@/components/WhatsApp/WhatsAppButton";
 
 export function About() {
   return (

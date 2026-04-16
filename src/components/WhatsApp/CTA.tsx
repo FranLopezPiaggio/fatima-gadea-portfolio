@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "./animation";
+import { fadeInUp, staggerContainer } from "@/components/animation";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 export function CTA() {

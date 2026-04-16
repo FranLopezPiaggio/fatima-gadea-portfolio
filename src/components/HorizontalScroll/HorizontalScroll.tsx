@@ -17,7 +17,7 @@ export const HorizontalScroll = ({ children }: HorizontalScrollProps) => {
     // Layer A: Container - provides scroll distance (300vh for 6 items)
     <section
       ref={targetRef}
-      className="relative h-[300vh] bg-aqua/20"
+      className="relative h-[200vh] bg-aqua/20"
     >
       {/* Layer B: Sticky Viewport - pins to viewport */}
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">

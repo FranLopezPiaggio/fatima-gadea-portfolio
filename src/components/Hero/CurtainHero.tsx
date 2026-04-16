@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/components/animation";
 import { ArrowDown } from "lucide-react";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppButton } from "@/components/WhatsApp/WhatsAppButton";
 import Image from "next/image";
 
 function CurtainLeft({ x, opacity }: { x: any; opacity: any }) {

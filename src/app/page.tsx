@@ -1,9 +1,8 @@
 import {
-  Hero,
   About,
   Services,
-  Experience,
-  Certifications,
+  Projects,
+  LinearDecorator,
   Process,
   CTA,
   Footer,
@@ -17,6 +16,8 @@ export default function Home() {
       <HeroCurtain />
       <About />
       <Services />
+      {/* <Projects /> */}
+      <LinearDecorator />
       <Process />
       <CTA />
       <Footer />

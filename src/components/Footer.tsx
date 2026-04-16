@@ -11,7 +11,7 @@ export function Footer() {
 
         <div className="flex justify-center gap-6 mb-8">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/fatimagadeab"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-green text-white rounded-full flex items-center justify-center hover:bg-teal transition-colors cursor-pointer"
@@ -20,7 +20,7 @@ export function Footer() {
             <Instagram className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/fatima-gadea-370110274/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-green text-white rounded-full flex items-center justify-center hover:bg-teal transition-colors cursor-pointer"

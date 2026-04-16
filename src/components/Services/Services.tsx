@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { fadeInUp } from "./animation";
-import { HorizontalScroll, StaticServicesGrid } from "./HorizontalScroll";
+import { fadeInUp } from "../animation";
+import { HorizontalScroll, StaticServicesGrid } from "../HorizontalScroll";
 import { ServiceCard, ServiceCardStatic } from "./ServiceCard";
 
 const services = [
@@ -67,7 +67,7 @@ export function Services() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "-10px" }}
         variants={fadeInUp}
         className="mb-16 px-4"
       >
