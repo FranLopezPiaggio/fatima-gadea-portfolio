@@ -94,7 +94,8 @@ export function Services() {
         </StaticServicesGrid>
       ) : (
         // Horizontal scroll for desktop with motion enabled
-        <HorizontalScroll>
+        <div className="mt-[-150px]">
+        <HorizontalScroll >
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -104,6 +105,7 @@ export function Services() {
             />
           ))}
         </HorizontalScroll>
+        </div>
       )}
     </section>
   );
